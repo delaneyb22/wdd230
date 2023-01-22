@@ -4,7 +4,7 @@
 
 header,
 footer {
-	background-color: #708080;
+	background-color:#0d281e;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -93,6 +93,9 @@ main{
 }
 #p-font{
     text-align: center;
+}
+.main-paragraph{
+    text-align:center;
 }
 
 
