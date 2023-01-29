@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Quicksand&family=Titan+One&display=swap');
 
-
+*{
+  padding:5px;
+  margin:5px;
+  border:2px red;
+}
 header,
 footer {
 	background-color:#0d281e;
@@ -23,13 +27,15 @@ nav {
 }
 nav a {
 	display: block;
-	color: #fff;
+	color:#f1e5ec;
 	text-align: center;
 	padding: 15px;
 	text-decoration: none;
 	font-size: 0.9rem;
-    flex: 1 1 auto;
+  flex: 1 1 auto;
+  border: 1px;
 }
+
 nav a:hover {
 	background-color: #072117;
 	color: #B5c2b7;
@@ -37,8 +43,10 @@ nav a:hover {
 .logo{
     width: 200px;
     height:200px;
-    margin: 0 auto;
-    display: block;
+    justify-content: left;
+    align-self: left;
+   
+
 }
 :root {
     --primary-color: #B5c2b7;
@@ -97,6 +105,7 @@ main{
 .main-paragraph{
     text-align:center;
 }
+
 
 
 
