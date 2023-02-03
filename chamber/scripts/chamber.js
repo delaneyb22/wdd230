@@ -1,4 +1,4 @@
-document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
+document.querySelector("#last-modified").textContent = `Last Modification: ${document.lastModified}`;
 const date = new Date(document.lastModified);
     document.getElementById('last-modified').innerHTML ="Last Modified:"+date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
 
@@ -11,3 +11,6 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 function toggleMenu(){
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
+//make the date like Feb 13 2023
+const topDate=new Date();
+document.querySelector("#date").textContent=topDate;

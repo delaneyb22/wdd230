@@ -13,23 +13,10 @@
 <body>
     <header>
         <img class="logo" src="/wdd230/chamber/images/Odessa, MO copy.png" alt="logo of odessa chamber of commerce">
-        <h1>Odessa Chamber of Commerce</h1>
-        <!--<nav>
-        <button id="hamburger-button">&#9776;</button>
-            <ul id="navigation" class="open">
-                <li><a id="menu" href="#"></a></li>
-                <li class="active"><a href="/wdd230/chamber/index.html">Home</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    -->
+        <h1>Odessa Chamber of Commerce</h1> 
         <nav>
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li><a id="menu" href="#"></a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Directory</a></li>
@@ -37,36 +24,57 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        
     </header>
     <main>
+        <p id="date"></p>
         <div class="background">
-            <div id="hero-msg">
-                <p>hero message</p>
+            <div class="hero-div">
+                <div class="hero-msg">
+                    <h1>Welcome to Odessa</h1>
+
+                </div>
+                <div id="join">
+                    <a href="#">Join the Chamber!</a>
+                </div>
             </div>
             <div id="news">
-                <p>News</p>
+                <h3>Recent News</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed ligula id nisl euismod molestie. Aenean a elit in sem maximus tempor. Integer fermentum turpis enim. Vestibulum tincidunt at mauris quis vestibulum. Pellentesque ut fringilla lacus. Vivamus sit amet ex egestas, porttitor diam a, euismod orci. Donec venenatis eros elit, at interdum leo semper at. Fusce eleifend leo quis lacus finibus gravida. Vestibulum tempor mi et sagittis efficitur. </p>
             </div>
-            <div id="spotlights">
-                <p>Spotlight</p>
-            </div>
-            <div id="join">
-                <p>Join</p>
+            <div class="spotlights-box">
+                <div id="spotlight1">
+                    <h3>Spotlight</h3>
+                </div>
+                <div id="spotlight2">
+                    <h3>Spotlight</h3>
+                </div>
             </div>
             <div id="events">
-                <p>Events</p>
+                <h3>Events</h3>
+                <ul id="events-list">
+                    <li>Meet the owners</li>
+                        <p>info about when and where</p>
+                    <li>Ladie's Night</li>
+                        <p>info about when and where</p>
+                    <li>FBLA</li>
+                        <p>info about when and where</p>
+                </ul>
             </div>
-            <div id="weather">
-                <p>Weather</p>
-            </div>
+            <section class="weather">
+                <h3>Weather Forecast</h3>
+                <p>weather info</p>
+                <p>weather info</p>
+            </section>
         </div>
     </main>
     <footer>
         <img class="logo" src="/wdd230/chamber/images/Odessa, MO copy.png" alt="logo of odessa chamber of commerce">
         <a href="#">Link to map</a>
         <div id="footer-background-box"></div>
-        <p>&copy; <script>document.write(new Date().getFullYear())</script> .:. Odessa Chamber of Commerce .:. WDD 230 Project .:. Delaney Baker .:. </p>
-        <p id="last-modified" style="text-align:center"></p>
-    </div>
+            <h4>&copy; <script>document.write(new Date().getFullYear())</script> .:. Odessa Chamber of Commerce .:. WDD 230 Project .:. Delaney Baker .:. </h4>
+            <p id="last-modified" style="text-align:center"></p>
+        </div>
     </footer>
     <script src="/wdd230/chamber/scripts/chamber.js"></script>
 </body>
