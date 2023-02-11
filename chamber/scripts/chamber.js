@@ -15,7 +15,7 @@ function toggleMenu(){
 //header date
 const currentDate = new Date();
  const month = currentDate.toLocaleString('default', { month: 'long' });
-    document.getElementById('currentdate').innerHTML =month+" "+currentDate.getDate()+", "+currentDate.getFullYear();
+    document.getElementById("currentdate").innerHTML =month+" "+currentDate.getDate()+", "+currentDate.getFullYear();
 
 //display banner mon tues
 
@@ -46,3 +46,6 @@ switch(bannerDay) {
         break;
         }
 document.getElementById("banner").innerHTML = bannerMessage;
+
+
+
