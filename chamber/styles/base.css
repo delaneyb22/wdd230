@@ -14,12 +14,15 @@ header, footer {
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
+  
 }
 footer {
     font: size 0.5em;
     text-align: center;
 }
-
+#footer-logo{
+  width:50%
+}
 #content{
   max-width:2000px;
   margin:0 auto;
@@ -83,6 +86,9 @@ footer a{
 footer a:hover{
   color: var(--accent2-color);
 	background-color: var(--secondary-color);
+}
+.social-media{
+  grid-column: 3;
 }
 .logo{
     display: block;
@@ -268,7 +274,8 @@ section{
 .hero-img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  
+  grid-column: 2;
 }
 .weather{
   padding: 10px;
@@ -315,9 +322,7 @@ footer h3{
   padding: 5px;
   margin:2px;
 }
-#footer-logo{
-  width:40%;
-}
+
 
 .slideshow-container {
   max-width: 1000px;
@@ -366,6 +371,16 @@ footer h3{
   transition: background-color 0.6s ease;
 }
 
+#discover-main{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+#discover-main img{
+  border: 2px dashed pink;
+  width:100%;
+  height:auto;
+}
 .active {
   background-color: #717171;
 }
