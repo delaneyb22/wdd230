@@ -371,26 +371,43 @@ footer h3{
   transition: background-color 0.6s ease;
 }
 
-#discover-main{
-  display:flex;
-  flex-direction: column;
-  text-align: center;
-}
-#discover-main img{
-  border: 2px dashed pink;
-  width:100%;
-  height:auto;
-}
+
 .active {
   background-color: #717171;
 }
-
+#lazy-load{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+#lazy-load img{
+  width: 100%;
+  height:auto;
+  border:2px solid #AB490d;
+  filter: blur(0);
+  transition: filter 0.5s;
+  margin: 10px;
+}
 /* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
+#lazy-load img [data-src]{
+  min-width: 50px;
+  min-height: 50px;
+  filter: blur(0);
+}
+#lazy-load img:hover{
+  filter: blur(5px);
+}
+img src{
+  filter: blur(0.2em);
+  transition: filter 0.5s;
+}
+#discover-background{
+  background-color: #f1e5ec;
+}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
