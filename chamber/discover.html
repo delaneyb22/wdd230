@@ -26,18 +26,19 @@
     
     <p id="currentdate"></p>
 </header>
+<div id="discover-background">
 <body>
-    <div id="discover-main">
+    <!--<div id="discover-main">
     <div id="image-1">
-        <img src="/wdd230/chamber/images/advanced.jpg" alt="advanced industries">
+        <img src="/wdd230/lesson7/images/placeholder.jpg" data-src="/wdd230/lesson7/images/placeholder.jpg" alt="placeholder" />
         <p>Description of business</p>
     </div>
     <div id="image-2">
-        <img src="/wdd230/chamber/images/advanced.jpg" alt="advanced industries">
+        <img src="/wdd230/lesson7/images/placeholder.jpg" data-src="/wdd230/lesson7/images/capitol.jpeg" alt="capitol building">
         <p>Description of business</p>
     </div>
     <div id="image-3">
-        <img src="/wdd230/chamber/images/advanced.jpg" alt="advanced industries">
+        <img src="/wdd230/lesson7/images/placeholder.jpg" data-src="/wdd230/lesson7/images/forest.jpeg" alt="forest">
         <p>Description of business</p>
     </div>
     <div id="image-4">
@@ -48,6 +49,23 @@
         <img src="/wdd230/chamber/images/advanced.jpg" alt="advanced industries">
         <p>Description of business</p>
     </div>
+</div>-->
+<div id="lazy-load">
+    <img src="/wdd230/chamber/images/pexels-fauxels-3184405.jpg"
+    data-src="/wdd230/chamber/images/pexels-fauxels-3184405.jpg" alt="advanced">
+    <p>Description of each photo</p>
+    <img src="/wdd230/chamber/images/advanced.jpg" 
+    data-src="/wdd230/chamber/images/advanced.jpg" alt="advanced">
+    <p>Description of each photo</p>
+    <img src="/wdd230/chamber/images/pexels-tim-douglas-6205471.jpg" 
+    data-src="/wdd230/chamber/images/pexels-tim-douglas-6205471.jpg" alt="dinner">
+    <p>Description of each photo</p>
+    <img src="/wdd230/chamber/images/pexels-pixabay-264636.jpg"
+    data-src="/wdd230/chamber/images/pexels-pixabay-264636.jpg" alt="">
+    <p>Description of each photo</p>
+    <img src="/wdd230/chamber/images/pexels-oleksandr-pidvalnyi-12944970.jpg" 
+    data-src="/wdd230/chamber/images/pexels-oleksandr-pidvalnyi-12944970.jpg"alt="sylvie">
+    <p>Description of each photo</p>
 </div>
     <footer>
             <img id="footer-logo" src="/wdd230/chamber/images/footer logo.jpg" alt="logo of odessa chamber of commerce">
@@ -67,5 +85,39 @@
                 <a href="https://www.linkedin.com/" target="_blank"><img src="/wdd230/chamber/images/linkedin.png" alt="linkedin icon"></a>
             </div>
     </footer>
+</div>
+<script src="/wdd230/chamber/chamber.js"></script>
+<script>
+    const images = document.querySelectorAll("img");
+
+    function preloadImage(img){
+    const src= img.getAttribute("data-src");
+    if(!src){
+        return;
+    }
+
+    img.src=src;
+    }
+
+    const imgOptions={
+    threshold:1,
+    rootMargin: "0px 0px 300px 0px"
+    };
+
+    const imgObserver = new IntersectionObserver((entries, imgObserver)=>{
+      entries.forEach(entry =>{
+        if (!entry.isIntersecting){
+            return;
+        } else {
+            preloadImage(entry.target);
+            imgObserver.unobserve(entry.target);
+        }
+    })
+    }, imgOptions);
+
+    images.forEach(image =>{
+    imgObserver.observe(image);
+})
+</script>
 </body>
 </html>
