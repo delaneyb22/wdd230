@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/wdd230/chamber/styles/base.css">
+    <link rel="stylesheet" href="/wdd230/chamber/styles/medium.css">
+    <link rel="stylesheet" href="/wdd230/chamber/styles/large.css">
+    <link rel="icon" href="/wdd230/chamber/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/wdd230/chamber/images/Odessa_logo.webp" alt="logo of odessa chamber of commerce">
+        <h1>Odessa Chamber of Commerce</h1> 
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="/wdd230/chamber/index.html">Home</a></li>
+                <li><a href="/wdd230/chamber/discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="/wdd230/chamber/join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <p id="currentdate"></p>
+    </header>
+    <form method="get" action="/wdd230/chamber/thankyou.html">
+        
+            <fieldset>
+                <legend>Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Business Position<input type="text" name="title" placeholder="alpha characters, -,min 7 letters"></label>
+                <label class="top">Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Website<input type="url" name="url" placeholder="http://"></label>
+                <label class="top">Business Name*<input type="text" name="title" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label class="sbs"><input type="radio" name="audience" value="NP">Non Profit</label>
+                <label class="sbs"><input type="radio" name="audience" value="bronze">Bronze</label>
+                <label class="sbs"><input type="radio" name="audience" value="silver">Silver</label>
+                <label class="sbs"><input type="radio" name="audience" value="gold">Gold</label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>business info<input type="textarea" name="description" placeholder="briefly describe business"></label>
+                <input type="hidden" id="date" name="date" value="CurrentTime"> 
+                <input type="hidden" id="time" name="time" value="CurrentDate">
+            </fieldset>
+            <input type="submit" value="Submit" class="submitBtn">
+
+
+    </form>
+
+
+    <footer>
+        <img id="footer-logo" src="/wdd230/chamber/images/Odessa_logo.webp" alt="logo of odessa chamber of commerce">
+        <h3>Odessa Missouri</h3>
+        <div class="contact"> 
+            <br>  
+            <a href="#">Odessachamber@Missouri.gov</a><br><br>
+            <a href="#">816-555-0909</a><br><br>
+            <a href="#">Link to map</a><br><br>
+            </ul>
+        </div>
+            <h4>&copy; <script>document.write(new Date().getFullYear())</script> .:. Odessa Chamber of Commerce .:. WDD 230 Project .:. Delaney Baker .:. </h4>
+            <p id="last-modified" style="text-align:center"></p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook icon"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="linkedin icon"></a>
+            </div>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
