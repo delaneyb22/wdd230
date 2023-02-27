@@ -1,0 +1,35 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   
+  }
+  h2{
+    color:blue;
+    font-family: Helvetica;
+    text-align:center;
+    text-decoration: underline;
+  }
+  .cards img{
+    box-shadow: 3px 3px 3px 3px;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    height:auto;
+  }
+  h1{
+    color:rgb(147, 144, 239);
+    text-align:center;
+  text-shadow:2px 1px rgb(84, 80, 216);
+  }
+  p{
+    text-align:center;
+    font-family:Courier New;
+    color:rgb(84, 80, 216);
+  }
+  section{
+    border:3px solid rgb(84, 80, 216);
+    padding: 5px;
+    margin: 5px;
+    background-color:rgb(156, 154, 224);
+  }
