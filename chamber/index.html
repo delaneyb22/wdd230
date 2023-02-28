@@ -18,11 +18,11 @@
     <img class="logo" src="/wdd230/chamber/images/Odessa_logo.webp" alt="logo of odessa chamber of commerce">
     <h1>Odessa Chamber of Commerce</h1> 
     <nav>
-        <ul class="navigation">
+       <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="/wdd230/chamber/index.html">Home</a></li>
             <li><a href="/wdd230/chamber/discover.html">Discover</a></li>
-            <li><a href="#">Directory</a></li>
+            <li><a href="/directory_test.html">Directory</a></li>
             <li><a href="/wdd230/chamber/join.html">Join</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -41,36 +41,7 @@
     </picture>
         <h2 id="banner"></h2>
     </div>
-           <!-- <div class="slideshow-container">
-                <div class="mySlides fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="/wdd230/chamber/images/odessa_downtown.jpeg" style="width:100%">
-                  <div class="text">Downtown Odessa</div>
-                </div>
-                
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">2 / 3</div>
-                  <img id="pic2"src="/wdd230/chamber/images/rodeo.jpg">
-                  <div class="text">Chamber of Commerce Rodeo</div>
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img id="pic3" src="/wdd230/chamber/images/odessamo_sign.jpg">
-                  <div class="text">Odessa MO</div>
-                </div>
-            
-                
-                </div>
-                <br>
-                
-                <div style="text-align:center">
-                  <span class="dot"></span> 
-                  <span class="dot"></span> 
-                  <span class="dot"></span> 
-                </div>
-            -->
+          
 
     <div id="join">
         <a href="#">Join the Chamber!</a>
@@ -155,27 +126,7 @@
 </div><!--content div-->
 <script src="/wdd230/chamber/scripts/chamber.js"></script>
 <script src="/wdd230/chamber/scripts/windchill.js"></script>
-<script>
-        let slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 4000); // Change image every 2 seconds
-        }
-</script>
+
 
 
 </body>
