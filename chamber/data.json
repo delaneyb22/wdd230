@@ -1,0 +1,77 @@
+{
+    "prophets": [
+        {
+            "name": "Advanced Industries",
+            "address":"108 N 2nd St. Odessa, MO 64076",
+            "phonenumber": "816.633.7503",
+            "websiteurl": "advancedindustries.com",
+            "image": "",
+            "membershiplevel": ""
+        },
+        {
+            "name": "Silverstien Eye Doctor",
+            "address":"201 N 2nd St. Ste C Odessa, MO  64076​",
+            "phonenumber": "816.230.5321",
+            "websiteurl": "www.silversteineyecenters.com",
+            "image": "",
+            "membershiplevel": ""
+        },
+        {
+            "name": "Central Bank",
+            "address":"416 N 2nd St. Odessa, MO 64076",
+            "phonenumber": "816.633.5151",
+            "websiteurl": "www.centralbank.net",
+            "image": "",
+            "membershiplevel": ""
+        },
+        {
+            "name": "Heritage Reality",
+            "address":"200 S 2nd St. Odessa, MO 64076",
+            "phonenumber": "816.230.5324",
+            "websiteurl": "www.heritagerealtyodessa.com",
+            "image": "",
+            "membershiplevel": ""
+        },
+        {
+            "name": "Peddicord Law",
+            "address":"",
+            "phonenumber": "",
+            "websiteurl": "",
+            "image": "",
+            "membershiplevel": ""
+        },
+        {
+            "name": "Odessa Heating and Cooling",
+            "address":"",
+            "phonenumber": "",
+            "websiteurl": "",
+            "image": "",
+            "membershiplevel": ""
+        },
+        {
+            "name": "Collision Leaders",
+            "address":"",
+            "phonenumber": "",
+            "websiteurl": "",
+            "image": "",
+            "membershiplevel": ""
+        },
+        {
+            "name": "Odessa Animal Clinic",
+            "address":"",
+            "phonenumber": "",
+            "websiteurl": "",
+            "image": "",
+            "membershiplevel": ""
+        },
+        {
+            "name": "Odessa Medical Group",
+            "address":"",
+            "phonenumber": "",
+            "websiteurl": "",
+            "image": "",
+            "membershiplevel": ""
+        }
+
+    ]
+}
