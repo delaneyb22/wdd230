@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    background-color: antiquewhite;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(71, 147, 101);
+    text-shadow: 2px 2px white;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(45, 101, 68);
+}
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:medium;
+    text-decoration: underline;
+}
+figure img{
+    border:2px solid white;
+}
