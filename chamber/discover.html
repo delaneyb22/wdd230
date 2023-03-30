@@ -3,121 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/wdd230/chamber/styles/base.css">
-    <link rel="stylesheet" href="/wdd230/chamber/styles/medium.css">
-    <link rel="stylesheet" href="/wdd230/chamber/styles/large.css">
-    <link rel="icon" href="/wdd230/chamber/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">            
+    <link rel="icon" href="/chamber/favicon.ico">
+    <link rel="stylesheet" href="/chamber/styles/base.css">
+    <link rel="stylesheet" href="/chamber/styles/medium.css">
+    <link rel="stylesheet" href="/chamber/styles/large.css">
     <title>Odessa Chamber of Commerce</title>
 </head>
-<header>
-    <img class="logo" src="/wdd230/chamber/images/Odessa_logo.webp" alt="logo of odessa chamber of commerce">
-    <h1>Odessa Chamber of Commerce</h1> 
-    <nav>
-        <ul class="navigation">
-            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="/wdd230/chamber/index.html">Home</a></li>
-            <li><a href="/wdd230/chamber/discover.html">Discover</a></li>
-            <li><a href="/wdd230/chamber/directory.html">Directory</a></li>
-            <li><a href="/wdd230/chamber/join.html">Join</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <p id="currentdate"></p>
-</header>
-<div id="discover-background">
 <body>
-    <!--<div id="discover-main">
-    <div id="image-1">
-        <img src="/wdd230/lesson7/images/placeholder.jpg" data-src="/wdd230/lesson7/images/placeholder.jpg" alt="placeholder" />
-        <p>Description of business</p>
-    </div>
-    <div id="image-2">
-        <img src="/wdd230/lesson7/images/placeholder.jpg" data-src="/wdd230/lesson7/images/capitol.jpeg" alt="capitol building">
-        <p>Description of business</p>
-    </div>
-    <div id="image-3">
-        <img src="/wdd230/lesson7/images/placeholder.jpg" data-src="/wdd230/lesson7/images/forest.jpeg" alt="forest">
-        <p>Description of business</p>
-    </div>
-    <div id="image-4">
-        <img src="/wdd230/chamber/images/advanced.jpg" alt="advanced industries">
-        <p>Description of business</p>
-    </div>
-    <div id="image-5">
-        <img src="/wdd230/chamber/images/advanced.jpg" alt="advanced industries">
-        <p>Description of business</p>
-    </div>
-</div>-->
-<div id="lazy-load">
-    <img src="/wdd230/chamber/images/tinified/advanced.jpg"
-    data-src="/wdd230/chamber/images/pexels-fauxels-3184405.jpg" alt="advanced">
-    <p>Description of each photo</p>
-    <img src="/wdd230/chamber/images/tinified/advanced.jpg" 
-    data-src="/wdd230/chamber/images/advanced.jpg" alt="advanced">
-    <p>Description of each photo</p>
-    <img src="/wdd230/chamber/images/tinified/pexels-pixabay-264636.jpg" 
-    data-src="/wdd230/chamber/images/tinified/pexels-pixabay-264636.jpg" alt="dinner">
-    <p>Description of each photo</p>
-    <img src="/wdd230/chamber/images/tinified/pexels-oleksandr-pidvalnyi-12944970.jpg"
-    data-src="/wdd230/chamber/images/tinified/pexels-oleksandr-pidvalnyi-12944970.jpg" alt="placeholder">
-    <p>Description of each photo</p>
-    <img src="/wdd230/chamber/images/tinified/pexels-pixabay-264636.jpg" 
-    data-src="/wdd230/chamber/images/tinified/pexels-pixabay-264636.jpg"alt="placeholder">
-    <p>Description of each photo</p>
-</div>
-    <footer>
-            <img id="footer-logo" src="/wdd230/chamber/images/Odessa_logo.webp" alt="logo of odessa chamber of commerce">
-            <h3>Odessa Missouri</h3>
-            <div class="contact"> 
-                <br>  
-                <a href="#">Odessachamber@Missouri.gov</a><br><br>
-                <a href="#">816-555-0909</a><br><br>
-                <a href="#">Link to map</a><br><br>
+<header>
+        <div class="main-header">
+            <nav>
+                <button id="hamburgerBtn"> 
+                    <span>&#9776;</span> 
+                    <span>X</span> 
+                </button>
+                <ul id="primaryNav">
+                    <li><a href="/chamber/index.html">Home</a></li>
+                    <li><a href="/chamber/discover.html">Discover</a></li>
+                    <li><a href="/chamber/directory.html">Directory</a></li>
+                    <li><a href="/chamber/join.html">Join</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-            </div><!--last modified footer-->
-                <h4>&copy; <script>document.write(new Date().getFullYear())</script> .:. Odessa Chamber of Commerce .:. WDD 230 Project .:. Delaney Baker .:. </h4>
-                <p id="last-modified" style="text-align:center"></p>
+            </nav>
+            <div class="logo">
+
+                <a href="index.html"><img class="logo-img" src="/chamber/images/Odessa_logo.webp" alt="logo"></a>
+                <div class="headings">
+                    <h1>Odessa</h1>
+                    <h5>Chamber of Commerce</h5>
+                </div>
             </div>
             <div class="social-media">
-                <a href="https://www.facebook.com/" target="_blank"><img src="/wdd230/chamber/images/facebook.png" alt="facebook icon"></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img src="/wdd230/chamber/images/linkedin.png" alt="linkedin icon"></a>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
             </div>
-    </footer>
-</div>
-<script src="/wdd230/chamber/chamber.js"></script>
-<script>
-    const images = document.querySelectorAll("img");
+            
+        </div>
+        <span id="date"></span>
+</header>
+<section class="discover_section">
+    <h2>Odessa</h2>
+    <h3>Population: 5,585</h3>
+    <h3>Average household income: $58,945</h3>
+    <h3>Average house cost: $214,000</h3>
+    <h3>Persons per household: 2.60</h3>
+</section>
+<section class="discover_section2">
+    <h2>Dyer Park</h2>
+    <h3>Recently added pickleball courts</h3>
+    <h3>Renovated roads as of fall 2022</h3>
+    <h3>Three seperate playgrounds</h3>
+    <h3>Aquatic center open all summer and available to rent for parties</h3>
+    <img src="/chamber/images/playground.jpeg" alt="playground">
+</section>
+<section class="discover_section3">
+    <h2>Downtown Shopping</h2>
+    <h3>Historic buildings in downtown Odessa with local shops</h3>
+    <h3>Many products come straight from local vendors</h3>
+    <h3>Convient location</h3>
+    <img src="/chamber/images/odessa_downtown.jpeg" alt="downtown">
 
-    function preloadImage(img){
-    const src= img.getAttribute("data-src");
-    if(!src){
-        return;
-    }
+</section>
+<section class="discover_section4">
+    <h2>Maple Leaf Conservation Area</h2>
+    <h3>Beautiful lake and trails</h3>
+    <h3>Hundreds of acres of Missouri conservation land</h3>
+    <h3>Boat ramp and lake access for fishing</h3>
+    <img src="/chamber/images/Maple_Leaf_Lake.jpeg" alt="maple leaf lake">
 
-    img.src=src;
-    }
+</section>
 
-    const imgOptions={
-    threshold:1,
-    rootMargin: "0px 0px 300px 0px"
-    };
 
-    const imgObserver = new IntersectionObserver((entries, imgObserver)=>{
-      entries.forEach(entry =>{
-        if (!entry.isIntersecting){
-            return;
-        } else {
-            preloadImage(entry.target);
-            imgObserver.unobserve(entry.target);
-        }
-    })
-    }, imgOptions);
+<footer>
+                
+    <img class="logo-img footer-img" src="/chamber/images/Odessa_logo.webp" alt="logo">
+        
+    <h3>Odessa, Missouri</h3>
+    <div class="contact-info">    
+        <br>
+        <a href="#">Odessachamber@Missouri.org</a><br><br>
+        <a href="#">816-555-0909</a><br><br>
+        <a href="#">Map</a>
+    </div>
 
-    images.forEach(image =>{
-    imgObserver.observe(image);
-})
-</script>
+    <div class="copyright">
+        <hr>
+        &copy; <span id="year"></span> Odessa Chamber | <b>Delaney Baker</b> | WDD 230 Project |
+        <span id="last-update"></span>
+    </div>
+</footer>
+<script src="/chamber/scripts/chamber.js"></script>
 </body>
 </html>
