@@ -1,18 +1,8 @@
-document.querySelector("#last-modified").textContent = `Last Modification: ${document.lastModified}`;
-const lastModifiedDate = new Date(document.lastModified);
-    document.getElementById('last-modified').innerHTML ="Last Modified:"+lastModifiedDate.getMonth()+"-"+lastModifiedDate.getDate()+"-"+lastModifiedDate.getFullYear()+" "+lastModifiedDate.getHours()+":"+lastModifiedDate.getMinutes()+":"+lastModifiedDate.getSeconds();
-
-
-
-
-
-
-
 const url = 'https://delaneyb22.github.io/wdd230/chamber/data.json';
 async function getBuisnessData() {
     const response = await fetch(url);
     const data = await response.json();
-  
+ 
   displayBuisness(data.buisnesses);
   }
   
@@ -47,3 +37,21 @@ const displayBuisness = (buisnesses) => {
     card.appendChild(p);
   } )// end of forEach loop
 } // end of function expression
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
