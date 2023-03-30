@@ -6,7 +6,7 @@
             "phonenumber": "816.633.7503",
             "websiteurl": "advancedindustries.com",
             "image": "/wdd230/chamber/images/tinified/advanced.jpg",
-            "membershiplevel": ""
+            "membershiplevel": "Bronze"
         },
         {
             "name": "Silverstien Eye Doctor",
@@ -14,14 +14,14 @@
             "phonenumber": "816.230.5321",
             "websiteurl": "www.silversteineyecenters.com",
             "image": "/wdd230/chamber/images/silverstein.jpg",
-            "membershiplevel": ""
+            "membershiplevel": "Bronze"
         {
             "name": "Central Bank",
             "address":"416 N 2nd St. Odessa, MO 64076",
             "phonenumber": "816.633.5151",
             "websiteurl": "www.centralbank.net",
             "image": "",
-            "membershiplevel": ""
+            "membershiplevel": "Bronze"
         },
         {
             "name": "Heritage Reality",
@@ -29,47 +29,47 @@
             "phonenumber": "816.230.5324",
             "websiteurl": "www.heritagerealtyodessa.com",
             "image": "",
-            "membershiplevel": ""
+            "membershiplevel": "Silver"
         },
         {
             "name": "Peddicord Law",
-            "address":"",
-            "phonenumber": "",
-            "websiteurl": "",
+            "address":"111 S 2nd St.",
+            "phonenumber": "816-845-3200",
+            "websiteurl": "www.Pedicordlaw.com",
             "image": "",
-            "membershiplevel": ""
+            "membershiplevel": "Silver"
         },
         {
             "name": "Odessa Heating and Cooling",
-            "address":"",
-            "phonenumber": "",
-            "websiteurl": "",
+            "address":"600 W Dryden st.",
+            "phonenumber": "816.230.7716",
+            "websiteurl": "odessahtgclg.com",
             "image": "",
-            "membershiplevel": ""
+            "membershiplevel": "Silver"
         },
         {
             "name": "Collision Leaders",
-            "address":"",
-            "phonenumber": "",
-            "websiteurl": "",
+            "address":"120 west main st",
+            "phonenumber": "816-432-5987",
+            "websiteurl": "Collisionleaders.com",
             "image": "",
-            "membershiplevel": ""
+            "membershiplevel": "Gold"
         },
         {
             "name": "Odessa Animal Clinic",
-            "address":"",
-            "phonenumber": "",
-            "websiteurl": "",
+            "address":"100 W Main St",
+            "phonenumber": "816-236-6500",
+            "websiteurl": "Odessaanimalclinic.com",
             "image": "",
-            "membershiplevel": ""
+            "membershiplevel": "Silver"
         },
         {
             "name": "Odessa Medical Group",
-            "address":"",
-            "phonenumber": "",
+            "address":"316 W. 40 Hwy. Ste. B",
+            "phonenumber": "816-236-9865",
             "websiteurl": "",
             "image": "",
-            "membershiplevel": ""
+            "membershiplevel": "Bronze"
         }
 
     ]
